@@ -3,24 +3,35 @@ import css from './Transactions.module.css'
 
 export const Transactions = ({items}) => {
   return(
-  <table class="transaction-history">
+  <table className={css.transactions}>
   <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+    <tr className={css.tableHead}>
+      <th className={css.tableHeadItem}>Type</th>
+      <th className={css.tableHeadItem}>Amount</th>
+      <th className={css.tableHeadItem}>Currency</th>
     </tr>
   </thead>
 
   <tbody>
     {items.map(({id, type, amount, currency}) => (
-    <tr key = {id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+    <tr key = {id} className={css.tableRow}>
+      <td className={css.tableData}>{type}</td>
+      <td className={css.tableData}>{amount}</td>
+      <td className={css.tableData}>{currency}</td>
     </tr>
     ))}
   </tbody>
 </table>
 )
 }
+
+Transactions.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};
