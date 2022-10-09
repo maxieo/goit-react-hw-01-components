@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/maxieo/goit-react-hw-01-components.git/static/css/main.bb1193e8.css",
-    "main.js": "/maxieo/goit-react-hw-01-components.git/static/js/main.1f75923c.js",
-    "index.html": "/maxieo/goit-react-hw-01-components.git/index.html",
-    "main.bb1193e8.css.map": "/maxieo/goit-react-hw-01-components.git/static/css/main.bb1193e8.css.map",
-    "main.1f75923c.js.map": "/maxieo/goit-react-hw-01-components.git/static/js/main.1f75923c.js.map"
+    "main.css": "/goit-react-hw-01-components/static/css/main.bb1193e8.css",
+    "main.js": "/goit-react-hw-01-components/static/js/main.1f75923c.js",
+    "index.html": "/goit-react-hw-01-components/index.html",
+    "main.bb1193e8.css.map": "/goit-react-hw-01-components/static/css/main.bb1193e8.css.map",
+    "main.1f75923c.js.map": "/goit-react-hw-01-components/static/js/main.1f75923c.js.map"
   },
   "entrypoints": [
     "static/css/main.bb1193e8.css",
